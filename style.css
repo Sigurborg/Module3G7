@@ -67,6 +67,4 @@ ul {
     grid-template-columns: repeat(3, auto);
     width: 225px;
     margin: auto;
-    height: 200px;
-
 }
