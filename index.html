@@ -4,9 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+      <header> This is DOM</header>
+      <h1>Learning the basics</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint minima odit nobis dolor vero quibusdam possimus nemo temporibus, quas quam optio dignissimos fugit exercitationem laborum maiores, saepe ullam repellat eligendi! Molestiae asperiores temporibus doloremque eaque quod culpa iure placeat expedita.</p>
+      
+       <!-- Here is the button -->
+      <button id="myBtn">Event Listeners</button>
+      <!-- Here I did the EventListener in JS, put it in two lines with the \n function-->
+      <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+          alert("Welcome to my addEventListener! \n  You WON!!!!");
+        });
+        </script>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, ratione dignissimos consequatur iste praesentium error unde omnis quisquam officia perspiciatis porro. In nam nulla obcaecati tenetur placeat debitis cumque aut, omnis iure modi numquam quisquam possimus tempora eveniet, animi nihil amet asperiores recusandae unde eos ea. Odio facere provident quae.</p>
+      <!-- Trying out a button of animation in JS, make the button change its color in 5 seconds to grey -->
+      <button id="color">Change my color</button>
+      <style>
+        #color {
+          transition-property: background-color;
+          transition-duration: 5s;
+        }
+      </style>
+      
+      <!--with the oneclik function the button changes-->
+      <script>
+        color.onclick = function() {
+          this.style.backgroundColor = 'grey';
+        };
+      </script>
+
+    <div id="gameContainer">
+        <hi>Tic Tac Toe</hi>
+        <div id="cellContainer">
+            <div cellIndex="0" clss="cell"></div>
+            <div cellIndex="1" clss="cell"></div>
+            <div cellIndex="2" clss="cell"></div>
+            <div cellIndex="3" clss="cell"></div>
+            <div cellIndex="4" clss="cell"></div>
+            <div cellIndex="5" clss="cell"></div>
+            <div cellIndex="6" clss="cell"></div>
+            <div cellIndex="7" clss="cell"></div>
+            <div cellIndex="8" clss="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <button id="restartBtn">Restart</button>
+
+
     
+    </div>
+    
+
+<script src="main.js"></script>
+</div>
 </body>
 </html>
